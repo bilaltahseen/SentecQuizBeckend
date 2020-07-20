@@ -16,7 +16,7 @@ exports.getdata = (req, res) => {
       db
         .collection('QuestionCollection/Easy/QuestionsData')
         .orderBy('id', 'asc')
-        .limit(20)
+        .limit(5)
         .get()
         .then((snapshot) => {
           snapshot.forEach((document) => {
@@ -30,7 +30,7 @@ exports.getdata = (req, res) => {
       db
         .collection('QuestionCollection/Medium/QuestionsData')
         .orderBy('id', 'asc')
-        .limit(20)
+        .limit(5)
         .get()
         .then((snapshot) => {
           snapshot.forEach((document) => {
@@ -44,7 +44,7 @@ exports.getdata = (req, res) => {
       db
         .collection('QuestionCollection/Hard/QuestionsData')
         .orderBy('id', 'asc')
-        .limit(20)
+        .limit(5)
         .get()
         .then((snapshot) => {
           snapshot.forEach((document) => {
@@ -69,7 +69,7 @@ exports.getdata = (req, res) => {
       db
         .collection('QuestionCollection/Easy/QuestionsData')
         .orderBy('id', 'desc')
-        .limit(20)
+        .limit(5)
         .get()
         .then((snapshot) => {
           snapshot.forEach((document) => {
@@ -83,7 +83,7 @@ exports.getdata = (req, res) => {
       db
         .collection('QuestionCollection/Medium/QuestionsData')
         .orderBy('id', 'desc')
-        .limit(20)
+        .limit(5)
         .get()
         .then((snapshot) => {
           snapshot.forEach((document) => {
@@ -97,7 +97,7 @@ exports.getdata = (req, res) => {
       db
         .collection('QuestionCollection/Hard/QuestionsData')
         .orderBy('id', 'desc')
-        .limit(20)
+        .limit(5)
         .get()
         .then((snapshot) => {
           snapshot.forEach((document) => {
